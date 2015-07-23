@@ -1,4 +1,4 @@
-" use Vim mode instead of pure Vi, it must be the first instruction
+" use vim mode instead of pure vi, it must be the first instruction
 set nocompatible
 
 " display settings
