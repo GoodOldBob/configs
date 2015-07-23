@@ -6,8 +6,8 @@ set encoding=utf-8 " encoding used for displaying file
 set ruler " show the cursor position all the time
 set showmatch " highlight matching braces
 set showmode " show insert/replace/visual mode
-let g:molokai_original = 1
-let g:rehash256 = 1
+let g:molokai_original=1
+let g:rehash256=1
 
 " write settings
 set confirm " confirm :q in case of unsaved changes
