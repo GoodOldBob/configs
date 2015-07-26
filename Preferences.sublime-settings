@@ -7,7 +7,7 @@
     // ambiguity between committing the completion and inserting a newline.
     "auto_complete_commit_on_tab": true,
     
-    "font_size": 16.0,
+    "font_size": 10.0,
     
     "ignored_packages": [],
     
