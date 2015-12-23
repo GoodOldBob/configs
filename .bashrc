@@ -1,6 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+# make sure .profile or .bash_profile sources to this file (loads this as well)
 
 # If not running interactively, don't do anything
 case $- in
