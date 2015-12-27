@@ -181,6 +181,9 @@ mode "$mode_system" {
 }
 bindsym $mod+Pause mode "$mode_system"
 
+# font
+font pango: Monospace 8
+
 #######################################################################
 # custom keybinds
 #######################################################################
