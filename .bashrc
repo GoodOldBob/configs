@@ -114,8 +114,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# added by Bob
+export PATH="/usr/local/heroku/bin:$PATH:~/bin"
 
 # Added by Bob for virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
