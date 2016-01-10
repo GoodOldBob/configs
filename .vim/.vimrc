@@ -1,13 +1,15 @@
-" use vim mode instead of pure vi, it must be the first instruction
+" use Vim mode instead of pure Vi, it must be the first instruction
 set nocompatible
 
 " display settings
+set t_Co=256
+set background=dark
+colorscheme molokai
 set encoding=utf-8 " encoding used for displaying file
 set ruler " show the cursor position all the time
 set showmatch " highlight matching braces
 set showmode " show insert/replace/visual mode
-let g:molokai_original=1
-let g:rehash256=1
+let g:molokai_original = 0 " set to 1 for original monokai bg
 
 " write settings
 set confirm " confirm :q in case of unsaved changes
@@ -35,8 +37,6 @@ filetype plugin on " load the plugins for specific file types
 filetype indent on " automatically indent code
 
 " syntax highlighting
-colorscheme molokai " set color scheme, must be installed first
-set background=dark " dark background for console
 syntax enable " enable syntax highlighting
 
 " characters for displaying non-printable characters
