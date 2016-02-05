@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
 fi
 
 # added by Bob
-export PATH="/usr/local/heroku/bin:$PATH:~/bin"
+export PATH="/usr/local/heroku/bin:$PATH:~/bin:/var/lib/gems/1.8/bin/"
 
 # Added by Bob for virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
