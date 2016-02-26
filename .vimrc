@@ -24,6 +24,7 @@ set shiftwidth=4 " set indentation depth to 4 columns
 set softtabstop=4 " backspacing over 4 spaces like over tabs
 set tabstop=4 " set tabulator length to 4 columns
 set textwidth=80 " wrap lines automatically at 80th column
+set paste " fixes problems with copy pasting from outside sources
 
 " search settings
 set hlsearch " highlight search results
