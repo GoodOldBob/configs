@@ -25,6 +25,7 @@ set softtabstop=4 " backspacing over 4 spaces like over tabs
 set tabstop=4 " set tabulator length to 4 columns
 set textwidth=80 " wrap lines automatically at 80th column
 set paste " fixes problems with copy pasting from outside sources
+stty -ixon " fix ctrl-s causing scroll lock
 
 " search settings
 set hlsearch " highlight search results
