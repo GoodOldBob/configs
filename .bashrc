@@ -3,6 +3,8 @@
 # for examples
 # make sure .profile or .bash_profile sources to this file (loads this as well)
 
+export PATH="/usr/local/heroku/bin:$PATH:~/bin:/var/lib/gems/1.8/bin/"
+
 # If not running interactively, don't do anything
 case $- in
   *i*) ;;
@@ -108,8 +110,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export PATH="/usr/local/heroku/bin:$PATH:~/bin:/var/lib/gems/1.8/bin/"
 
 # for virtualenvwrapper
 # export WORKON_HOME=$HOME/.virtualenvs
