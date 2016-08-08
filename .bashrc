@@ -160,6 +160,7 @@ pip-sync() {
   pip install -r $reqs
 }
 
+# extract anything
 extract() {
     if [ -f $1 ] ; then
       case $1 in
@@ -179,4 +180,10 @@ extract() {
      else
          echo "'$1' is not a valid file"
      fi
+}
+
+# clock - A bash clock that can run in your terminal window.
+clock ()
+{
+while true;do clear;echo "===========";date +"%r";echo "===========";sleep 1;done
 }
