@@ -6,14 +6,18 @@ set clipboard=unnamed
 
 " cursor
 if &term =~ "xterm\\|rxvt"
-   " use an red cursor in insert mode
-   let &t_SI = "\<Esc>]12;red\x7"
-   " use an orange-ish cursor otherwise
-   let &t_EI = "\<Esc>]12;\#FFA560\x7"
-   silent !echo -ne "\033]12;\#FFA560\007"
-   " reset cursor when vim exits
-   autocmd VimLeave * silent !echo -ne "\033]112\007"
+  " use an red cursor in insert mode
+  let &t_SI = "\<Esc>]12;red\x7"
+  " use an orange-ish cursor otherwise
+  let &t_EI = "\<Esc>]12;\#FFA560\x7"
+  silent !echo -ne "\033]12;\#FFA560\007"
+  " reset cursor when vim exits
+  autocmd VimLeave * silent !echo -ne "\033]112\007"
 endif
+set cursorcolumn
+set cursorline
+autocmd InsertEnter * highlight CursorLine guibg=#000050 guifg=fg
+autocmd InsertLeave * highlight CursorLine guibg=#004000 guifg=fg
 
 " display settings
 set t_Co=256
