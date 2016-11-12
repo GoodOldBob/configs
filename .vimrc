@@ -1,6 +1,20 @@
 " use Vim mode instead of pure Vi, it must be the first instruction
 set nocompatible
 
+" MacVim
+set clipboard=unnamed
+
+" cursor
+if &term =~ "xterm\\|rxvt"
+   " use an red cursor in insert mode
+   let &t_SI = "\<Esc>]12;red\x7"
+   " use an orange-ish cursor otherwise
+   let &t_EI = "\<Esc>]12;\#FFA560\x7"
+   silent !echo -ne "\033]12;\#FFA560\007"
+   " reset cursor when vim exits
+   autocmd VimLeave * silent !echo -ne "\033]112\007"
+endif
+
 " display settings
 set t_Co=256
 set background=dark
@@ -24,8 +38,9 @@ set shiftwidth=4 " set indentation depth to 4 columns
 set softtabstop=4 " backspacing over 4 spaces like over tabs
 set tabstop=4 " set tabulator length to 4 columns
 set textwidth=80 " wrap lines automatically at 80th column
-set paste " fixes problems with copy pasting from outside sources
-stty -ixon " fix ctrl-s causing scroll lock
+
+" set paste disabled because it interferes with set ruler, use manually
+"set paste " fixes problems with copy pasting from outside sources
 
 " search settings
 set hlsearch " highlight search results
