@@ -22,7 +22,7 @@ autocmd InsertLeave * highlight CursorLine guibg=#004000 guifg=fg
 " display settings
 set t_Co=256
 set background=dark
-colorscheme molokai
+colorscheme zenburn
 set encoding=utf-8 " encoding used for displaying file
 set ruler " show the cursor position all the time
 set showmatch " highlight matching braces
