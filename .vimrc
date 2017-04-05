@@ -1,6 +1,18 @@
 " use Vim mode instead of pure Vi, it must be the first instruction
 set nocompatible
 
+" Plugins
+call plug#begin('~/.vim/plugins')
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-syntastic/syntastic'
+Plug 'ervandew/supertab'
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+
+" Enable mouse
+set mouse=a
+
 " MacVim
 set clipboard=unnamed
 
